@@ -8,7 +8,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 26, 26, 32),
+      backgroundColor: const Color.fromARGB(255, 26, 26, 32),
       body: Stack(
         children: [
           
@@ -23,11 +23,11 @@ class Login extends StatelessWidget {
         Positioned(top: 200,left: 100,child: Image.asset("assets/images/login5.png")),
         Center(
           child: SingleChildScrollView(
-            padding: EdgeInsets.all(70.0),
+            padding: const EdgeInsets.all(70.0),
             child: Column(
               children: [
           
-            SizedBox(height: 230,),
+            const SizedBox(height: 230,),
             
                 
                 TextField(
@@ -35,7 +35,7 @@ class Login extends StatelessWidget {
                     contentPadding: const EdgeInsets.all(10.0),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20.0),
-                      borderSide: BorderSide(),
+                      borderSide: const BorderSide(),
                     ),
                     fillColor: Colors.white,
                     filled: true,
@@ -54,25 +54,25 @@ class Login extends StatelessWidget {
               child: InkWell(
                 onTap: (){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Home()),);},
                 child: Container(
-                  child: Text("Verify", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900,color: Colors.white),),
-                  margin: EdgeInsets.all(20),
-                  padding: EdgeInsets.fromLTRB(100, 20, 100, 20),
+                  child: const Text("Verify", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900,color: Colors.white),),
+                  margin: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.fromLTRB(100, 20, 100, 20),
               
                   
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 77, 93, 250),
+                    color: const Color.fromARGB(255, 77, 93, 250),
                     borderRadius: BorderRadius.circular(50)
                   ),))),
         Positioned(
               top: 600,
               left: 85,
               child: Container(
-                child: Text("Your personal details are safe with us ", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300,color: Color.fromARGB(255, 124, 130, 186)),),
+                child: const Text("Your personal details are safe with us ", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300,color: Color.fromARGB(255, 124, 130, 186)),),
                 
 
                 
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 26, 26, 32),
+                  color: const Color.fromARGB(255, 26, 26, 32),
                   borderRadius: BorderRadius.circular(7)
                 )
                 
@@ -83,12 +83,12 @@ class Login extends StatelessWidget {
               top: 630,
               left: 100,
               child: Container(
-                child: Text("Read our Privacy Policy and Terms and Conditions", style: TextStyle(fontSize: 10, fontWeight: FontWeight.w300,color: Color.fromARGB(255, 124, 130, 186)),),
+                child: const Text("Read our Privacy Policy and Terms and Conditions", style: TextStyle(fontSize: 10, fontWeight: FontWeight.w300,color: Color.fromARGB(255, 124, 130, 186)),),
                 
 
                 
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 26, 26, 32),
+                  color: const Color.fromARGB(255, 26, 26, 32),
                   borderRadius: BorderRadius.circular(7)
                 )
                 
